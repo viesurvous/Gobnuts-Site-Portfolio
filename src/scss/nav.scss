@@ -1,0 +1,13 @@
+.navbar {
+    .logo {
+      width: 75px;
+    }
+  }
+
+  .navbar-nav {
+    .disabled {
+      span {
+        text-decoration: line-through;
+      }
+    }
+  }

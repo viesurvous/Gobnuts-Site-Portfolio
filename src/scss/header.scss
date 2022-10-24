@@ -1,0 +1,25 @@
+.header {
+    background-position: center left 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    @media all and (min-width: 768px){
+      background-position: center center;
+    }
+
+    .header-inner_title {
+      display: block;
+    } 
+}
+  
+   
+
+.banner {
+  .box {
+    .title {
+      font-size: 32px;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+  }
+}
