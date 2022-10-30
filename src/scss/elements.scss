@@ -1,16 +1,26 @@
 .container-tweet_button {
     padding: 10px;
     border: 1px solid white;
-    a {
+    margin: 25px 0px;
+    a, button {
         color: white;
         text-decoration: none;
         transition: 0.5 ease-in-out;
         text-transform: uppercase;
         letter-spacing: 2px;
+        background-color: transparent!important;
+        border: none;
         font-weight: 800;
         &:hover {
             color: rgba(255, 255, 255, 0.83);
  
         }
     }
+}
+
+.announcement-won {
+    color: #03fd0c;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
 }

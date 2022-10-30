@@ -1,14 +1,12 @@
 
 import {Container, Row, Col} from "react-bootstrap";
-import PostTweet from './PostTweet';
+import WhitelistApplication from './WhitelistApplication';
 
 function Header(props){
     return (
         <>
         {props.fullsize ?
-        <header className={"header vh-100 centered"} style={{ 
-            backgroundImage: `linear-gradient( rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url("`+props.background+`")` 
-        }}>
+        <header className={"header vh-100 centered"} style={{ backgroundImage: `linear-gradient( rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url("`+props.background+`")` }}>
         <Container>
             <Row>
                 <Col sm={12} md={6}>
@@ -31,22 +29,24 @@ function Header(props){
                 </Col>
                 {props.home &&
                 <Col sm={12} md={6} className="centered">
-                    <PostTweet/>
+                    <WhitelistApplication/>
                 </Col>
                 }
             </Row>   
         </Container>
         </header>
         :
-        <header className={"banner p-5 w-100"} style={{ 
-            backgroundImage: `linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.5)),url("`+props.background+`")` 
-        }}>
+        <header className={"banner p-5 w-100"} style={{ backgroundImage: `linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.5)),url("`+props.background+`")` }}>
             <Container>
-             <div className="box">
-                    <span className="title">
-                        {props.title}
-                    </span>
-                </div>
+                <Row>
+                <Col sm={12} md={6}>
+                    <div className="box">
+                        <span className="title">
+                            {props.title}
+                        </span>
+                    </div>
+                    </Col>
+                </Row>
             </Container>
         </header>
         }
