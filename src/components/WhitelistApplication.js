@@ -16,7 +16,7 @@ const PostTweet = () => {
         setLoading(true);
         setTimeout(() => {
 
-            
+
             setLoading(false);
             setClaim(true);
         }, 3500);
@@ -29,7 +29,7 @@ const PostTweet = () => {
         {canClaim ?
             <div className="flex mt-4 text-center">
                 <Confetti numberOfPieces={40}/>
-                <p className="announcement-won">You won</p>
+                <h3 className="announcement-won">You won</h3>
                 <div className="container-tweet_button">
                     <a href={"https://twitter.com/intent/tweet?text="+text} target="_blank" className="tweetbutton"><FaTwitter/> Claim</a>
                 </div>
