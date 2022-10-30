@@ -35,6 +35,8 @@ function Navigation(){
           <Nav className="mr-auto">
         </Nav>
         </Navbar.Collapse>
+        {/** Button Wallet */}
+        
         </ContainerFluid>
       </Navbar>
     )

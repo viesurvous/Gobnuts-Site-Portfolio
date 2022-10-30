@@ -3,8 +3,8 @@
 @import "./scss/layout.scss";
 @import "./scss/elements.scss";
 
-.App {
+body {
   background-color: black;
-  color: white;
+  color: white!important;
 }
 
