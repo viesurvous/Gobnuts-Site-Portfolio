@@ -3,7 +3,7 @@ import {Container, Row, Col} from "react-bootstrap";
 
 function Header(props){
     return (
-        <>
+    <>
         {props.fullsize ?
         <header className={"header vh-100 centered"} style={{
         backgroundImage: `linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("`+props.background+`")`, 
@@ -35,7 +35,7 @@ function Header(props){
         </Container>
         </header>
         :
-        <header className={"banner mb-4 w-100 h-100"} style={{ backgroundImage: `linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("`+props.background+`")`,
+        <header className={"banner mb-4 w-100 h-100"} style={{ backgroundImage: `url("`+props.background+`")`,
         backgroundPosition: "center center", 
         backgroundSize: "cover"  }}>
             <Container>
@@ -51,7 +51,7 @@ function Header(props){
             </Container>
         </header>
         }
-            </>
+    </>
     )
 }
 
