@@ -35,11 +35,9 @@ function Header(props){
         </Container>
         </header>
         :
-        <header className={"banner mb-4 w-100 h-100"} style={{ backgroundImage: `url("`+props.background+`")`,
+        <header className={"banner mb-5 w-100 h-100"} style={{ backgroundImage: `url("`+props.background+`")`,
         backgroundPosition: "center center", 
         backgroundSize: "cover"  }}>
-            <Container>
-                <Row>
                 <Col sm={12} md={12}>
                     <div className="box text-center">
                         <span className="title">
@@ -47,8 +45,6 @@ function Header(props){
                         </span>
                     </div>
                     </Col>
-                </Row>
-            </Container>
         </header>
         }
     </>

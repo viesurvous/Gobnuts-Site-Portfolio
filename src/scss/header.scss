@@ -10,35 +10,12 @@
     .header-inner_title {
       display: block;
     } 
-    .box {
-      .title {
-        font-size: 5rem;
-        letter-spacing: 2px;
-        font-weight: 700;
-        line-height: 6rem;
-      }
-      .subtitle {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        font-weight: 700;
-        opacity: 0.75;
-      }
-    }
-}
-  
-   
 
-.banner {
-  .box {
-    .title {
-      font-size: 32px;
-      letter-spacing: 2px;
-      font-weight: 700;
-    }
-    .subtitle {
-      font-size: 24px;
-      letter-spacing: 2px;
-      font-weight: 700;
-    }
   }
-}
+  .title {
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+   
