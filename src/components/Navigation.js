@@ -19,24 +19,17 @@ function Navigation(){
     }, []);
 
     return (
-        <Navbar className="pt-0 pb-0" collapseOnSelect fixed="top" bg={offset > 500 ? 'black' : 'transparent'}  variant="light" expand="lg">
+        <Navbar className="pt-0 pb-0" collapseOnSelect fixed="top" bg={offset > 200 ? 'black' : 'transparent'}  variant="light" expand="lg">
         <ContainerFluid>
             <Navbar.Brand className="pt-0 pb-0">
               <Nav>
                 <LinkContainer to="/">
-                      <Nav.Link>     
+                      <Nav.Link className="white">     
                         <img className="logo" src={logo}/>
                       </Nav.Link>
                 </LinkContainer>  
               </Nav>
-            </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-          <Nav className="mr-auto">
-        </Nav>
-        </Navbar.Collapse>
-        {/** Button Wallet */}
-        
+            </Navbar.Brand>     
         </ContainerFluid>
       </Navbar>
     )

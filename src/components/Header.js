@@ -1,12 +1,15 @@
 
 import {Container, Row, Col} from "react-bootstrap";
-import WhitelistApplication from './WhitelistApplication';
 
 function Header(props){
     return (
         <>
         {props.fullsize ?
-        <header className={"header vh-100 centered"} style={{ backgroundImage: `linear-gradient( rgba(0,0,0,0.9), rgba(0,0,0,0.7)),url("`+props.background+`")` }}>
+        <header className={"header vh-100 centered"} style={{
+        backgroundImage: `linear-gradient( rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("`+props.background+`")`, 
+        backgroundPosition: "center center", 
+        backgroundSize: "cover" 
+        }}>
         <Container>
             <Row>
                 <Col sm={12} md={6}>
@@ -27,20 +30,18 @@ function Header(props){
                     </div>
                 }
                 </Col>
-                {props.home &&
-                <Col sm={12} md={6} className="centered">
-                    <WhitelistApplication/>
-                </Col>
-                }
             </Row>   
+            
         </Container>
         </header>
         :
-        <header className={"banner p-5 w-100"} style={{ backgroundImage: `linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.5)),url("`+props.background+`")` }}>
+        <header className={"banner mb-4 w-100 h-100"} style={{ backgroundImage: `linear-gradient(to left, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url("`+props.background+`")`,
+        backgroundPosition: "center center", 
+        backgroundSize: "cover"  }}>
             <Container>
                 <Row>
-                <Col sm={12} md={6}>
-                    <div className="box">
+                <Col sm={12} md={12}>
+                    <div className="box text-center">
                         <span className="title">
                             {props.title}
                         </span>
