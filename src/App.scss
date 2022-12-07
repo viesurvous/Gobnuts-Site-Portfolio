@@ -1,7 +1,7 @@
 @import "./scss/header.scss";
 @import "./scss/nav.scss";
 @import "./scss/layout.scss";
-@import "./scss/elements.scss";
+@import "./scss/faq.scss";
 
 $green : #03ff00;
 $violet : #383181;
@@ -42,7 +42,7 @@ body {
 }
 
 .opacity {
- opacity: 20%;
+ opacity: 10%;
 }
 
 
@@ -63,3 +63,16 @@ body {
   background-color: $violet;
 }
 
+.spr {
+  display: block;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, $violet, $red, $yellow, $green);
+}
+
+.spr-reverse {
+  display: block;
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to left, $violet, $red, $yellow, $green);
+}

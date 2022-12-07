@@ -1,9 +1,13 @@
 import Header from '../components/Header';
 import Origins from "../sections/Origins";
+import {Container, Row, Col} from "react-bootstrap";
+
 import Roadmap from "../sections/Roadmap";
 import Sneak from "../sections/Sneak";
-
+import Faq from "../sections/Faq";
 import Team from "../sections/Team";
+import Footer from "../sections/Footer";
+
 import home from "../assets/gobnuts.jpg";
 
 
@@ -16,6 +20,8 @@ function Home(props) {
         <Sneak/>
         <Roadmap/>
         <Team/>
+        <Faq/>
+        <Footer/>
     </div>
   ); 
 }

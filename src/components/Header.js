@@ -20,7 +20,7 @@ function Header(props){
                             </p>
                         </div>
                     </div>
-                {props.subtitle &&
+                {props.subtitle && props &&
                     <div className="header-inner_subtitle">
                         <div className="box">
                             <p className="subtitle">
@@ -35,16 +35,18 @@ function Header(props){
         </Container>
         </header>
         :
-        <header className={"banner mb-5 w-100 h-100"} style={{ backgroundImage: `url("`+props.background+`")`,
-        backgroundPosition: "center center", 
-        backgroundSize: "cover"  }}>
-                <Col sm={12} md={12}>
-                    <div className="box text-center">
-                        <span className="title">
-                            {props.title}
-                        </span>
-                    </div>
-                    </Col>
+            <header className={"banner mb-5 w-100 h-100"} style={{ backgroundImage: `url("`+props.background+`")`,
+            backgroundPosition: "center center", 
+            backgroundSize: "cover"  }}>
+                            {props.title &&
+            <Col sm={12} md={12}>
+                <div className="box text-center">
+                    <span className="title">
+                        {props.title}
+                    </span>
+                </div>
+            </Col>
+        }
         </header>
         }
     </>
